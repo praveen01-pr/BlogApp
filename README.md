@@ -1,5 +1,6 @@
-Next Blog App
-A simple Next.js based blogging application with MongoDB integration for seamless content management and user interaction.
+PraveenPrakash_WebDev_Assignment
+Project Overview
+Next Blog App is a blogging application built with Next.js and MongoDB. It features server-side rendering, API routes, and uses Tailwind CSS for styling. This project enables users to create, read, update, and delete blog posts efficiently.
 
 Setup Instructions
 How to Setup & Run this Project
@@ -7,38 +8,32 @@ How to Setup & Run this Project
 Visit the official Node.js website: https://nodejs.org/en/download/
 Download the installer, run it, and follow the prompts.
 
-❖ Steps to Setup and Run the Project
+❖ Run the following steps:
 
-Open the project folder in VS Code.
+Open the project folder in Visual Studio Code.
 
-Open the integrated terminal (Right-click on sidebar → “Open In Integrated Terminal”).
+Open the integrated terminal (Right-click on sidebar > Open In Integrated Terminal).
 
-Run the command:
+Run:
 
 text
 npm install
-Wait for the installation to complete (requires internet).
+Wait for the installation to finish (internet connection required).
 
-Setup MongoDB:
-a. Open this link - LINK (replace with your actual MongoDB signup URL)
-b. Sign up on the website.
-c. Click on “New Project” option.
-d. After project creation, go to the “Database” section and build a database.
-e. Select M0 & your region and create the database.
-f. Setup a username & password (avoid the ‘@’ symbol in password), create the user.
-g. Finish & close database setup.
-h. Whitelist IP 0.0.0.0 by clicking “Add Entry”.
-i. Click “Connect” then select “Compass” option.
-j. Copy the connection string.
-k. Paste the connection string in db.js file located at:
-lib/config/db.js
-Replace the password placeholder with your actual password and save the file.
+Setup MongoDB Database:
+a. Sign up at your MongoDB service provider (replace LINK with actual signup link)
+b. Create a new project and build a database.
+c. Select M0 tier and your preferred region.
+d. Create a database user with username and password (avoid '@' in the password).
+e. Whitelist IP 0.0.0.0 for public access.
+f. Get the connection string from the “Connect” option.
+g. Paste the connection string into lib/config/db.js replacing the placeholder password with your actual password.
 
-Run the project in integrated terminal:
+Start the app:
 
 text
 npm run dev
-Copy the localhost URL from the terminal and open it in your browser to view the app.
+Open the URL provided in your terminal (usually http://localhost:3000) in a browser to use the app.
 
 Dependencies
 Next.js 14.0.4
@@ -56,20 +51,6 @@ React Toastify 10.0.3
 ESLint 8 with Next plugin
 
 Environment Variables & Database Setup
-The project requires a MongoDB database connection.
+MongoDB URI must be set in a .env.local file in the blog-app directory as MONGODB_URI.
 
-Set the connection URI as MONGODB_URI in a .env.local file in the blog-app directory.
-
-The connection string should be obtained from your MongoDB service and updated in lib/config/db.js.
-
-See the Setup MongoDB section above for detailed instructions.
-
-AI Tool Usage Disclosure
-This project utilized AI tools during development:
-
-ChatGPT: Assisted in generating code snippets, debugging errors, and creating documentation content.
-
-GitHub Copilot: Provided code completion suggestions to speed development.
-
-Screenshots and conversation logs of AI assistance have been maintained to comply with disclosure requirements.
-
+The connection string is used in the lib/config/db.js file to connect to MongoDB.
